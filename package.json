@@ -1,0 +1,23 @@
+{
+  "name": "lwc-dependency-viewer",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "walk": "npx ts-node scripts/walk-files.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cytoscape": "^3.19.9",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "cytoscape": "^3.23.0"
+  }
+}
