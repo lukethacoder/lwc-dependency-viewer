@@ -2,19 +2,29 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/cytoscape': ^3.19.9
+  '@types/lodash.memoize': ^4.1.7
+  '@types/node': ^18.15.10
   cytoscape: ^3.23.0
+  cytoscape-klay: ^3.1.4
+  fuse.js: ^6.6.2
+  lodash.memoize: ^4.1.2
   prettier: ^2.8.7
   typescript: ^5.0.2
   vite: ^4.2.1
 
 dependencies:
   cytoscape: 3.23.0
+  cytoscape-klay: 3.1.4_cytoscape@3.23.0
+  fuse.js: 6.6.2
+  lodash.memoize: 4.1.2
 
 devDependencies:
   '@types/cytoscape': 3.19.9
+  '@types/lodash.memoize': 4.1.7
+  '@types/node': 18.15.10
   prettier: 2.8.7
   typescript: 5.0.2
-  vite: 4.2.1
+  vite: 4.2.1_@types+node@18.15.10
 
 packages:
 
@@ -220,6 +230,29 @@ packages:
     resolution: {integrity: sha512-oqCx0ZGiBO0UESbjgq052vjDAy2X53lZpMrWqiweMpvVwKw/2IiYDdzPFK6+f4tMfdv9YKEM9raO5bAZc3UYBg==}
     dev: true
 
+  /@types/lodash.memoize/4.1.7:
+    resolution: {integrity: sha512-lGN7WeO4vO6sICVpf041Q7BX/9k1Y24Zo3FY0aUezr1QlKznpjzsDk3T3wvH8ofYzoK0QupN9TWcFAFZlyPwQQ==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: true
+
+  /@types/node/18.15.10:
+    resolution: {integrity: sha512-9avDaQJczATcXgfmMAW3MIWArOO7A+m90vuCFLr8AotWf8igO/mRoYukrk2cqZVtv38tHs33retzHEilM7FpeQ==}
+    dev: true
+
+  /cytoscape-klay/3.1.4_cytoscape@3.23.0:
+    resolution: {integrity: sha512-VwPj0VR25GPfy6qXVQRi/MYlZM/zkdvRhHlgqbM//lSvstgM6fhp3ik/uM8Wr8nlhskfqz/M1fIDmR6UckbS2A==}
+    peerDependencies:
+      cytoscape: ^3.2.0
+    dependencies:
+      cytoscape: 3.23.0
+      klayjs: 0.4.1
+    dev: false
+
   /cytoscape/3.23.0:
     resolution: {integrity: sha512-gRZqJj/1kiAVPkrVFvz/GccxsXhF3Qwpptl32gKKypO4IlqnKBjTOu+HbXtEggSGzC5KCaHp3/F7GgENrtsFkA==}
     engines: {node: '>=0.10'}
@@ -270,6 +303,11 @@ packages:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: true
 
+  /fuse.js/6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: false
+
   /has/1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
@@ -286,6 +324,14 @@ packages:
     dependencies:
       has: 1.0.3
     dev: true
+
+  /klayjs/0.4.1:
+    resolution: {integrity: sha512-WUNxuO7O79TEkxCj6OIaK5TJBkaWaR/IKNTakgV9PwDn+mrr63MLHed34AcE2yTaDntgO6l0zGFIzhcoTeroTA==}
+    dev: false
+
+  /lodash.memoize/4.1.2:
+    resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
+    dev: false
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -353,7 +399,7 @@ packages:
     hasBin: true
     dev: true
 
-  /vite/4.2.1:
+  /vite/4.2.1_@types+node@18.15.10:
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -378,6 +424,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.15.10
       esbuild: 0.17.14
       postcss: 8.4.21
       resolve: 1.22.1

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "walk": "npx ts-node scripts/walk-files.ts",
+    "walk": "npx ts-node --esm ./scripts/walk-files.ts",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -13,11 +13,16 @@
   "license": "MIT",
   "devDependencies": {
     "@types/cytoscape": "^3.19.9",
+    "@types/lodash.memoize": "^4.1.7",
+    "@types/node": "^18.15.10",
     "prettier": "^2.8.7",
     "typescript": "^5.0.2",
     "vite": "^4.2.1"
   },
   "dependencies": {
-    "cytoscape": "^3.23.0"
+    "cytoscape": "^3.23.0",
+    "cytoscape-klay": "^3.1.4",
+    "fuse.js": "^6.6.2",
+    "lodash.memoize": "^4.1.2"
   }
 }

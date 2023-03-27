@@ -12,7 +12,85 @@
       <p data-html>HTML</p>
       <p data-css>CSS</p>
     </div>
+
+    <div class="buttons">
+      <button id="btn-open-search">
+        <span class="sr-only">Search</span>
+      </button>
+      <button id="btn-open-settings">
+        <span class="sr-only">Open settings</span>
+      </button>
+    </div>
+    
+    <div id="component" data-is-open="false" class="sidebar">
+      <div>
+        <div class="component-close">
+          <button class="btn-close" id="btn-component-close">
+            <span class="sr-only">
+              close component
+            </span>
+          </button>
+        </div>
+        <header>
+          <div class="component-title">
+            <h2 title="component name">component name component name component name component name</h2>
+          </div>
+          <span class="file-types">
+            <img class="icon-javascript" src="./public/javascript.svg"/>
+            <img class="icon-html" src="./public/html.svg"/>
+            <img class="icon-css" src="./public/css.svg"/>
+          </span>
+        </header>
+
+        <h3 class="ref-title">Referenced by</h3>
+        <ul class="referenced-by"></ul>
+
+        <h3 class="ref-title">References</h3>
+        <ul class="references"></ul>
+        
+      </div>
+    </div>
+
+    <div id="settings" data-is-open="false" class="sidebar">
+      <div>
+        <div class="component-close">
+          <button class="btn-close" id="btn-settings-close">
+            <span class="sr-only">
+              close settings
+            </span>
+          </button>
+        </div>
+
+        <header>
+          <div class="component-title">
+            <h2>Settings</h2>
+          </div>
+        </header>
+
+        <div>
+          <div class="input-container checkbox">
+            <label for="toggle-orphan-modules">
+              <span class="label">Hide Orphan Modules</span>
+              <span>
+                <input type="checkbox" id="toggle-orphan-modules"/>
+                <p>Hides all components that are neither referenced or have any references.</p>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <dialog id="search">
+      <form method="dialog">
+        <input id="input-search" placeholder="Search for a component..."/>
+
+        <ul id="search-results"></ul>
+      </form>
+    </dialog>
+
     <div id="cy"></div>
+
     <script type="module" src="/main.ts"></script>
   </body>
 </html>
