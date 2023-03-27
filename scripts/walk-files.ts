@@ -1,8 +1,9 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import fs from 'fs'
+import path from 'path'
 
 // TODO: move to config/cli options
 const folderToSearch = './modules'
+
 const namespace = 'c'
 
 interface FileMetadata {
@@ -63,9 +64,9 @@ const camelToSnakeCase = (str: string) =>
 // Function to check if an HTML component references another file
 function hasHtmlComponent(content: string, target: string) {
   const htmlComponentName = `${namespace}-${camelToSnakeCase(target)}`
-  // TODO: fix for non-single lined HTML references
   const componentRegex = new RegExp(
-    `<${htmlComponentName}\\b[^>]*[\\s\\S]*?\\/${htmlComponentName}>`
+    `<${htmlComponentName}\\b[^>]*[\\s\\S]*?\\/${htmlComponentName}>`,
+    's'
   )
   return componentRegex.test(content)
 }
@@ -76,8 +77,13 @@ function removeNewlines(str: string) {
 
 // Function to check if a CSS component references another file
 function hasCssComponent(content: string, target: string) {
-  const componentRegex = new RegExp(`@import "${namespace}/${target}"`)
-  return componentRegex.test(content)
+  // check for CSS import
+  const importRegex = new RegExp(`@import "${namespace}/${target}"`)
+
+  // check for reference in CSS (styling top level of component)
+  const styleReference = new RegExp(`${namespace}-${camelToSnakeCase(target)}`)
+
+  return importRegex.test(content) || styleReference.test(content)
 }
 
 const getIsFile = (fileName: string) => ({
@@ -147,22 +153,24 @@ function searchForReferences(
           isChildFile.js &&
           hasImport(parentFileContentRef, childComponentName)
         ) {
-          references.push(createEdge('js', parentComponent, childComponentName))
-        } else if (
+          references.push(createEdge('js', childComponentName, parentComponent))
+        }
+        if (
           isCurrentFile.html &&
           isChildFile.html &&
           hasHtmlComponent(parentFileContentRef, childComponentName)
         ) {
           references.push(
-            createEdge('css', parentComponent, childComponentName)
+            createEdge('html', childComponentName, parentComponent)
           )
-        } else if (
+        }
+        if (
           isCurrentFile.css &&
           isChildFile.css &&
           hasCssComponent(parentFileContentRef, childComponentName)
         ) {
           references.push(
-            createEdge('html', parentComponent, childComponentName)
+            createEdge('html', childComponentName, parentComponent)
           )
         }
       }
@@ -223,4 +231,4 @@ const outputData = searchForReferences(filteredFiles)
   .flat()
   .map((item) => ({ data: item }))
 
-fs.writeFileSync(`output-v2.json`, JSON.stringify(outputData, undefined, 2))
+fs.writeFileSync(`output.json`, JSON.stringify(outputData, undefined, 2))
