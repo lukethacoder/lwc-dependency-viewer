@@ -2,1155 +2,1155 @@
   {
     "data": {
       "id": "accordion",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordion\\accordion",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordion\\accordion",
       "extensions": ["css", "html", "js"]
     }
   },
   {
     "data": {
       "id": "accordionSection",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionSection\\accordionSection",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionSection\\accordionSection",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "accordionManager",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionManager",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionManager",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "accordionSectionList",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionSectionList",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionSectionList",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "accordionUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "accordionUtilsPrivate",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionUtilsPrivate",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\accordionUtilsPrivate",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "multipleOpenSectionStrategy",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\multipleOpenSectionStrategy",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\multipleOpenSectionStrategy",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "singleOpenSectionStrategy",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\singleOpenSectionStrategy",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\accordionUtilsPrivate\\singleOpenSectionStrategy",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "avatar",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\avatar\\avatar",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\avatar\\avatar",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "badge",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\badge\\badge",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\badge\\badge",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "baseCombobox",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\baseCombobox",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\baseCombobox",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "baseComboboxEvents",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\baseComboboxEvents",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\baseComboboxEvents",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "keyboard",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\keyboard",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\keyboard",
       "extensions": ["js", "js", "js", "js", "js", "js"]
     }
   },
   {
     "data": {
       "id": "exampleBaseComboboxData",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\__mockData__\\exampleBaseComboboxData",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseCombobox\\__mockData__\\exampleBaseComboboxData",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "baseComboboxFormattedText",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxFormattedText\\baseComboboxFormattedText",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxFormattedText\\baseComboboxFormattedText",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "baseComboboxItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\baseComboboxItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\baseComboboxItem",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "card",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\card",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\card",
       "extensions": ["html", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "inline",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\inline",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\baseComboboxItem\\inline",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "button",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\button\\button",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\button\\button",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "buttonGroup",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonGroup\\buttonGroup",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonGroup\\buttonGroup",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "buttonIcon",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonIcon\\buttonIcon",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonIcon\\buttonIcon",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "buttonIconStateful",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonIconStateful\\buttonIconStateful",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonIconStateful\\buttonIconStateful",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "buttonMenu",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonMenu\\buttonMenu",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonMenu\\buttonMenu",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "buttonStateful",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonStateful\\buttonStateful",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\buttonStateful\\buttonStateful",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "utils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\card\\utils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\card\\utils",
       "extensions": ["js", "js", "js", "js", "js"]
     }
   },
   {
     "data": {
       "id": "carousel",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\carousel\\carousel",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\carousel\\carousel",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "carouselImage",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\carouselImage\\carouselImage",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\carouselImage\\carouselImage",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "checkboxGroup",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\checkboxGroup\\checkboxGroup",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\checkboxGroup\\checkboxGroup",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "combobox",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\combobox\\combobox",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\combobox\\combobox",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "dualListbox",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dualListbox\\dualListbox",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dualListbox\\dualListbox",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "default",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\default",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\default",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "dynamicIcon",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\dynamicIcon",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\dynamicIcon",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "ellie",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\ellie",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\ellie",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "eq",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\eq",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\eq",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "score",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\score",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\score",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "strength",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\strength",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\strength",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "trend",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\trend",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\trend",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "waffle",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\waffle",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\dynamicIcon\\waffle",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "fieldDependencyManager",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldDependencyManager\\fieldDependencyManager",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldDependencyManager\\fieldDependencyManager",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "constants",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\constants",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\constants",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "fieldUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\fieldUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\fieldUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "fieldUtilsReference",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\__tests__\\fieldUtilsReference",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\fieldUtils\\__tests__\\fieldUtilsReference",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "formattedDateTime",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedDateTime\\formattedDateTime",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedDateTime\\formattedDateTime",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "formattedLocation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedLocation\\formattedLocation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedLocation\\formattedLocation",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedLookup",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedLookup\\formattedLookup",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedLookup\\formattedLookup",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "formattedName",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedName\\formattedName",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedName\\formattedName",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedNumber",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedNumber\\formattedNumber",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedNumber\\formattedNumber",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedPhone",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedPhone\\formattedPhone",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedPhone\\formattedPhone",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedText",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedText\\formattedText",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedText\\formattedText",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedTime",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedTime\\formattedTime",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedTime\\formattedTime",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formattedUrl",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedUrl\\formattedUrl",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formattedUrl\\formattedUrl",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "formDensityUtilsPrivate",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formDensityUtilsPrivate\\formDensityUtilsPrivate",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\formDensityUtilsPrivate\\formDensityUtilsPrivate",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "icon",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\icon\\icon",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\icon\\icon",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "iconIe11",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\icon\\__tests__\\iconIe11",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\icon\\__tests__\\iconIe11",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "fetchSvg",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\fetchSvg",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\fetchSvg",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "iconUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\iconUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\iconUtils",
       "extensions": ["js", "js", "js"]
     }
   },
   {
     "data": {
       "id": "isIframeInEdge",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\isIframeInEdge",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\isIframeInEdge",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "polyfill",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\polyfill",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\polyfill",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "supportsSvg",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\supportsSvg",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iconUtils\\supportsSvg",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "geolocation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\geolocation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\geolocation",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "inputLocation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\inputLocation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\inputLocation",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "helptext",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\__raptorMocks__\\lightning\\helptext\\helptext",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputLocation\\__raptorMocks__\\lightning\\helptext\\helptext",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "idGenerator",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\idGenerator",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\idGenerator",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "inputUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\inputUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\inputUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "interacting",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\interacting",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\interacting",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "normalize",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\normalize",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\normalize",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "validity",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\validity",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\inputUtils\\validity",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "AddressFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\address\\AddressFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\address\\AddressFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "dateTimeOptions",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\dateTimeOptions",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\dateTimeOptions",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "dateTimeUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\dateTimeUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\dateTimeUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "intlDisplayNames",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\intlDisplayNames",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\intlDisplayNames",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "intlFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\intlFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\datetime\\intlFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "RelativeFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\duration\\RelativeFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\duration\\RelativeFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "internationalizationLibrary",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\internationalizationLibrary",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\internationalizationLibrary",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "localizationService",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\localizationService",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\localizationService",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "NameFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\name\\NameFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\name\\NameFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "NumberFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\NumberFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\NumberFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "numberFormatFallback",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\numberFormatFallback",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\numberFormatFallback",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "numberOptions",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\numberOptions",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\number\\numberOptions",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "addressFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\addressFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\addressFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "nameFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\nameFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\nameFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "numberFormat",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\numberFormat",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\internationalizationLibrary\\__tests__\\numberFormat",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "iso8601Utils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iso8601Utils\\iso8601Utils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\iso8601Utils\\iso8601Utils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "layout",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layout\\layout",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layout\\layout",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "styleUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layout\\styleUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layout\\styleUtils",
       "extensions": ["js", "js", "js", "js"]
     }
   },
   {
     "data": {
       "id": "layoutItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layoutItem\\layoutItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layoutItem\\layoutItem",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "layoutUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layoutUtils\\layoutUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\layoutUtils\\layoutUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "menuDivider",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuDivider\\menuDivider",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuDivider\\menuDivider",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "menuItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuItem\\menuItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuItem\\menuItem",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "menuSubheader",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuSubheader\\menuSubheader",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\menuSubheader\\menuSubheader",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "messages",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\messages\\messages",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\messages\\messages",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "numberUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\numberUtils\\numberUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\numberUtils\\numberUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "outputField",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\outputField\\outputField",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\outputField\\outputField",
       "extensions": ["css", "html", "js", "js", "html", "js"]
     }
   },
   {
     "data": {
       "id": "overflowLibrary",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\overflowLibrary\\overflowLibrary",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\overflowLibrary\\overflowLibrary",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "link",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\link",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\link",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "pill",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\pill",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\pill",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "plain",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\plain",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\plain",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "plainLink",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\plainLink",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\plainLink",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "pillMedia",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\__tests__\\pillMedia",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pill\\__tests__\\pillMedia",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "barePillContainer",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\barePillContainer",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\barePillContainer",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "pillContainer",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\pillContainer",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\pillContainer",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "pillItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\pillItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\pillItem",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "standardPillContainer",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\standardPillContainer",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\pillContainer\\standardPillContainer",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "primitiveButton",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveButton\\primitiveButton",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveButton\\primitiveButton",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "primitiveIcon",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveIcon\\primitiveIcon",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveIcon\\primitiveIcon",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "primitiveIconInlineSvg",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveIcon\\__tests__\\primitiveIconInlineSvg",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\primitiveIcon\\__tests__\\primitiveIconInlineSvg",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "radioGroup",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\radioGroup\\radioGroup",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\radioGroup\\radioGroup",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "recordEditForm",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\recordEditForm",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\recordEditForm",
       "extensions": ["html", "js", "js", "html", "js"]
     }
   },
   {
     "data": {
       "id": "inputField",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\InputField\\inputField",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\InputField\\inputField",
       "extensions": ["html", "js", "html", "js"]
     }
   },
   {
     "data": {
       "id": "uiObjectInfoApi",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\uiObjectInfoApi\\uiObjectInfoApi",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\uiObjectInfoApi\\uiObjectInfoApi",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "uiRecordApi",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\uiRecordApi\\uiRecordApi",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditForm\\__raptorMocks__\\lightning\\uiRecordApi\\uiRecordApi",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "picklists",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\picklists",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\picklists",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "recordEditUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\recordEditUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\recordEditUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "deepCopy",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\__tests__\\deepCopy",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordEditUtils\\__tests__\\deepCopy",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "recordForm",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordForm\\recordForm",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordForm\\recordForm",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "recordUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordUtils\\recordUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordUtils\\recordUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "recordViewForm",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordViewForm\\recordViewForm",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\recordViewForm\\recordViewForm",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "relativeDateTime",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\relativeDateTime\\relativeDateTime",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\relativeDateTime\\relativeDateTime",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "relativeDateTimeUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\relativeDateTime\\__tests__\\relativeDateTimeUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\relativeDateTime\\__tests__\\relativeDateTimeUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "resizeObserver",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\resizeObserver\\resizeObserver",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\resizeObserver\\resizeObserver",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "routingService",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\routingService\\routingService",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\routingService\\routingService",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "slider",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\slider\\slider",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\slider\\slider",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "spinner",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\spinner\\spinner",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\spinner\\spinner",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "tab",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tab\\tab",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tab\\tab",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "tabBar",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tabBar\\tabBar",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tabBar\\tabBar",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "tabset",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tabset\\tabset",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tabset\\tabset",
       "extensions": ["html", "js"]
     }
   },
   {
     "data": {
       "id": "textarea",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\textarea\\textarea",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\textarea\\textarea",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "mediaTile",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\mediaTile",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\mediaTile",
       "extensions": ["html"]
     }
   },
   {
     "data": {
       "id": "standardTile",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\standardTile",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\standardTile",
       "extensions": ["css", "html"]
     }
   },
   {
     "data": {
       "id": "tile",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\tile",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tile\\tile",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "touchScrollLibrary",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\touchScrollLibrary\\touchScrollLibrary",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\touchScrollLibrary\\touchScrollLibrary",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "tree",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\tree",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\tree",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "treeData",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeData",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeData",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "treeDataGenerator",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeDataGenerator",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeDataGenerator",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "treeNode",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeNode",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\tree\\treeNode",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "treeItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\treeItem\\treeItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\treeItem\\treeItem",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "classSet",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\classSet",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\classSet",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "labelUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\labelUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\labelUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "queryFocusable",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\queryFocusable",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utils\\queryFocusable",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "assert",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\assert",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\assert",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "browser",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\browser",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\browser",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "classListMutation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\classListMutation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\classListMutation",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "contentMutation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\contentMutation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\contentMutation",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "eventEmitter",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\eventEmitter",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\eventEmitter",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "guid",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\guid",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\guid",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "linkify",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\linkify",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\linkify",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "linkUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\linkUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\linkUtils",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "observers",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\observers",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\observers",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "phonify",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\phonify",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\phonify",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "scroll",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\scroll",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\scroll",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "smartSetAttribute",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\smartSetAttribute",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\smartSetAttribute",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "utility",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\utility",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\utility",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "utilsPrivate",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\utilsPrivate",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\utilsPrivate",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "videoUtils",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\videoUtils",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\videoUtils",
       "extensions": ["js", "js"]
     }
   },
   {
     "data": {
       "id": "defaultUtil",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\defaultUtil",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\defaultUtil",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "normalizeAriaAttribute",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeAriaAttribute",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeAriaAttribute",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "normalizeBoolean",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeBoolean",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeBoolean",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "normalizeString",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeString",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\normalizeString",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "urlValidation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\urlValidation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\utilsPrivate\\__tests__\\urlValidation",
       "extensions": ["js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigation",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigation\\verticalNavigation",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigation\\verticalNavigation",
       "extensions": ["html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigationItem",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItem\\verticalNavigationItem",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItem\\verticalNavigationItem",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigationItemBadge",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItemBadge\\verticalNavigationItemBadge",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItemBadge\\verticalNavigationItemBadge",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigationItemIcon",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItemIcon\\verticalNavigationItemIcon",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationItemIcon\\verticalNavigationItemIcon",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigationOverflow",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationOverflow\\verticalNavigationOverflow",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationOverflow\\verticalNavigationOverflow",
       "extensions": ["css", "html", "js", "js"]
     }
   },
   {
     "data": {
       "id": "verticalNavigationSection",
-      "path": "C:\\Users\\lukes\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationSection\\verticalNavigationSection",
+      "path": "lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc\\verticalNavigationSection\\verticalNavigationSection",
       "extensions": ["css", "html", "js"]
     }
   },
