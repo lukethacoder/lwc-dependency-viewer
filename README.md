@@ -7,10 +7,16 @@ Scan your LWC files to see the dependencies - displayed on to a cytoscape powere
 ```bash
 pnpm install
 
-# (for now) copy your LWC folder into this repo and run
+# before running, open the `scripts/walk-files.ts` script and replace the 
+# FOLDER_TO_SEARCH` value with your project path.
+# (until we hookup cli args)
 pnpm walk
 
+
 # run the dev server
+pnpm dev
+
+# this should open at http://localhost:5173/ 
 ```
 
 ## TODO:

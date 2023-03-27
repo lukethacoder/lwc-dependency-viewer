@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 // TODO: move to config/cli options
-const folderToSearch = './modules'
+const FOLDER_TO_SEARCH = './modules'
 
 const namespace = 'c'
 
@@ -209,7 +209,7 @@ function getAllFiles(folder: string) {
 }
 
 // Get all files in the folder
-const allFiles = getAllFiles(folderToSearch)
+const allFiles = getAllFiles(FOLDER_TO_SEARCH)
 
 // Filter the list to only include JavaScript, HTML, and CSS files
 const filteredFiles: FileMetadata[] = allFiles

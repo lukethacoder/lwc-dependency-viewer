@@ -5,17 +5,17 @@
     "declaration": true,
     "sourceMap": true,
 
-    "module": "commonjs",
+    "module": "ES2022",
     "moduleResolution": "node",
     "esModuleInterop": true,
 
     "target": "es2022",
-    "lib": ["es2022"],
+    "lib": ["es2022", "DOM"],
     
     "outDir": "dist/commonjs",
     "declarationDir": "dist/types"
   },
 
-  "include": ["scripts/", "main.ts"],
+  "include": ["./scripts/*.ts", "main.ts"],
   "exclude": ["**/__tests__"]
 }
