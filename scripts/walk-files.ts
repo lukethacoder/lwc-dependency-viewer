@@ -2,7 +2,8 @@ import fs from 'fs'
 import path from 'path'
 
 // TODO: move to config/cli options
-const FOLDER_TO_SEARCH = './modules'
+const FOLDER_TO_SEARCH =
+  'C:\\Users\\USER_NAME\\Github\\lwc-dependency-viewer\\sfdx-project\\force-app\\main\\default\\lwc'
 
 const namespace = 'c'
 

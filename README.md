@@ -19,6 +19,9 @@ pnpm dev
 # this should open at http://localhost:5173/ 
 ```
 
+> output.json here has been generated from the [lightning-base-components](https://www.npmjs.com/package/lightning-base-components) package as an example usage.
+
+
 ## TODO:
 
 Functional
