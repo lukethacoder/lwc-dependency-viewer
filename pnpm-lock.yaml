@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/cytoscape': ^3.19.9
+  '@types/cytoscape-klay': ^3.1.0
   '@types/lodash.memoize': ^4.1.7
   '@types/node': ^18.15.10
   cytoscape: ^3.23.0
@@ -20,6 +21,7 @@ dependencies:
 
 devDependencies:
   '@types/cytoscape': 3.19.9
+  '@types/cytoscape-klay': 3.1.0
   '@types/lodash.memoize': 4.1.7
   '@types/node': 18.15.10
   prettier: 2.8.7
@@ -225,6 +227,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@types/cytoscape-klay/3.1.0:
+    resolution: {integrity: sha512-jdHwHrvBlR0eDhZF9ggG+i7Qjx0/b0yZPZG6QfnRBc4SJwIA9BzsCxlHqHqFv1oh/CO8jJL5AkbvLUS9H0TLPQ==}
+    dependencies:
+      '@types/cytoscape': 3.19.9
+    dev: true
 
   /@types/cytoscape/3.19.9:
     resolution: {integrity: sha512-oqCx0ZGiBO0UESbjgq052vjDAy2X53lZpMrWqiweMpvVwKw/2IiYDdzPFK6+f4tMfdv9YKEM9raO5bAZc3UYBg==}
