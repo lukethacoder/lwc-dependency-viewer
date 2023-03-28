@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LWC Dependency Viewer</title>
   </head>
@@ -11,6 +11,8 @@
       <p data-js>JavaScript</p>
       <p data-html>HTML</p>
       <p data-css>CSS</p>
+      <p data-static-resource>StaticResource</p>
+      <p data-apex>Apex</p>
     </div>
 
     <div class="buttons">
@@ -42,12 +44,31 @@
           </span>
         </header>
 
-        <h3 class="ref-title">Referenced by</h3>
-        <ul class="referenced-by"></ul>
+        <div class="file-ref-container">
+          <div class="file-ref-type-container">
+            <h3 class="ref-title" id="referenced-by">Referenced by</h3>
+            <ul class="referenced-by"></ul>
+          </div>
 
-        <h3 class="ref-title">References</h3>
-        <ul class="references"></ul>
-        
+          <div class="file-ref-type-container">
+            <h3 class="ref-title" id="references">References</h3>
+            <ul class="references"></ul>
+          </div>
+          
+          <div class="file-ref-type-container">
+            <h3 class="ref-title" id="apex-references" data-has-data="false">
+              Apex Methods
+            </h3>
+            <ul class="apex-references"></ul>
+          </div>
+          
+          <div class="file-ref-type-container">
+            <h3 class="ref-title" id="static-resources" data-has-data="false">
+              Static Resources
+            </h3>
+            <ul class="static-resources"></ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -68,12 +89,46 @@
         </header>
 
         <div>
+          <div class="input-container select">
+            <label for="set-curve-type">
+              <span class="label">Set Edge Curve Type</span>
+              <span>
+                <p>Override the default curve style. "haystack" is more performant for larger graphs but removes arrows.</p>
+                <select id="set-curve-type">
+                  <option value="bezier" selected>bezier</option>
+                  <option value="unbundled-bezier">unbundled-bezier</option>
+                  <option value="haystack">haystack</option>
+                  <option value="straight">straight</option>
+                  <option value="segments">segments</option>
+                  <option value="taxi">taxi</option>
+                </select>
+              </span>
+            </label>
+          </div>
           <div class="input-container checkbox">
             <label for="toggle-orphan-modules">
               <span class="label">Hide Orphan Modules</span>
               <span>
                 <input type="checkbox" id="toggle-orphan-modules"/>
                 <p>Hides all components that are neither referenced or have any references.</p>
+              </span>
+            </label>
+          </div>
+          <div class="input-container checkbox">
+            <label for="toggle-apex-references">
+              <span class="label">Hide Apex References</span>
+              <span>
+                <input type="checkbox" id="toggle-apex-references"/>
+                <p>Hides indicators of Apex imports.</p>
+              </span>
+            </label>
+          </div>
+          <div class="input-container checkbox">
+            <label for="toggle-static-resource-references">
+              <span class="label">Hide StaticResource References</span>
+              <span>
+                <input type="checkbox" id="toggle-static-resource-references"/>
+                <p>Hides indicators of StaticResource imports.</p>
               </span>
             </label>
           </div>
@@ -91,6 +146,6 @@
 
     <div id="cy"></div>
 
-    <script type="module" src="/main.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,62 +1,25 @@
-import cytoscape from 'cytoscape'
-import memoize from 'lodash.memoize'
+import cytoscape, { NodeSingular } from 'cytoscape'
 import klay from 'cytoscape-klay'
 import Fuse from 'fuse.js'
 
-import data from './output.json'
+import data from '../output.json'
+import { ComponentReference, FileType, FuseItem } from '../types'
+import {
+  EDGES_COLORS,
+  DEFAULT_EDGE_OPACITY,
+  EDGE_CURVE_STYLE,
+} from './constants'
+import { makeComponentSvg } from './utils'
 import './style.css'
 
 cytoscape.use(klay)
 
-type FileType = 'js' | 'css' | 'html'
-
-const EDGES_COLORS: { [key: FileType]: `#${string}` } = {
-  js: '#f1e05a',
-  css: '#563d7c',
-  html: '#e34c26',
-  apex: '#178600',
-}
-
-const DEFAULT_EDGE_OPACITY = 0.48
-
 let hasActiveNode = false
-
-const makeComponentSvg = memoize((node) => {
-  const data = node.data()
-  const { id, extensions } = data
-
-  const width = 120
-  const height = 20
-  const lineWidth = 3
-
-  const svg3 = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 120 20">
-    <text transform="translate(${
-      extensions.length * lineWidth + 4
-    } 14.36)" style="font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; font-size: 12px;fill: #abb2bf;">
-      <tspan x="0" y="0">${id}</tspan>
-    </text>
-    ${extensions.map(
-      (fileType, key) =>
-        `<rect x="${
-          key * lineWidth
-        }" y="0" width="${lineWidth}" height="20" fill="${
-          EDGES_COLORS[fileType]
-        }"/>`
-    )}
-    <rect x="116" y="0" width="4" height="20" fill="${
-      node.style()['background-color'] || '#303030'
-    }"/>
-  </svg>`
-
-  return {
-    svg: `data:image/svg+xml;base64,${btoa(svg3)}`,
-    width,
-    height,
-  }
-})
+let showApexReference = true
+let showStaticResourceReference = true
 
 const getEdgeColorFromId = (id: string) => {
-  const edgeType = id.split('_')[0]
+  const edgeType = id.split('_')[0] as FileType
 
   if (Object.hasOwn(EDGES_COLORS, edgeType)) {
     return EDGES_COLORS[edgeType]
@@ -94,9 +57,24 @@ let cy = cytoscape({
         'transition-property': 'background-image-opacity opacity',
         'transition-timing-function': 'ease-in-out',
         // order is important. We use the background-color in our SVG image
-        'background-image': (ele) => makeComponentSvg(ele).svg,
-        width: (ele) => makeComponentSvg(ele).width,
-        height: (ele) => makeComponentSvg(ele).height,
+        'background-image': (node: NodeSingular) =>
+          makeComponentSvg({
+            node,
+            showApexReference,
+            showStaticResourceReference,
+          }).svg,
+        width: (node: NodeSingular) =>
+          makeComponentSvg({
+            node,
+            showApexReference,
+            showStaticResourceReference,
+          }).width,
+        height: (node: NodeSingular) =>
+          makeComponentSvg({
+            node,
+            showApexReference,
+            showStaticResourceReference,
+          }).height,
       },
     },
     {
@@ -105,7 +83,7 @@ let cy = cytoscape({
         'line-color': (edge) => getEdgeColorFromId(edge.id()),
         opacity: DEFAULT_EDGE_OPACITY,
         'transition-property': 'opacity',
-        'curve-style': 'unbundled-bezier',
+        'curve-style': EDGE_CURVE_STYLE,
         'source-arrow-shape': 'triangle',
         'source-arrow-color': '#fefefe',
         'source-arrow-fill': 'filled',
@@ -152,27 +130,24 @@ const handleNodeUnTap = () => {
   }
 }
 
-const handleClickComponentTreeItem = (e) => {
-  const node = cy.filter(
-    `#${e.currentTarget.dataset.id || e.target.dataset.id}`
-  )
+const handleClickComponentTreeItem = (e: Event) => {
+  const nodeId =
+    (e.currentTarget as HTMLButtonElement).dataset.id ||
+    (e.target as HTMLButtonElement).dataset.id
+
+  // find the node to mark as active
+  const node = cy.filter(`#${nodeId}`)
 
   if (!node) {
-    console.warn(
-      `Unable to find node with id ${
-        e.currentTarget.dataset.id || e.target.dataset.id
-      }`
-    )
+    console.warn(`Unable to find node with id ${nodeId}`)
     return
   }
 
   handleNodeTap(node)
 }
 
-const handleNodeTap = (node) => {
+const handleNodeTap = (node: NodeSingular) => {
   hasActiveNode = true
-
-  console.log('node ', node)
 
   node.style({
     'border-width': 2,
@@ -189,9 +164,9 @@ const handleNodeTap = (node) => {
 
   const edges = node.connectedEdges().map((item) => {
     // double check for lone edges?
-    const targetNode = item
-      .connectedNodes()
-      .find((item) => item.id() !== node.id())?.[0]
+    const targetNode = Array.from(item.connectedNodes()).find(
+      (item) => item.id() !== node.id()
+    )?.[0]
 
     const nodeData = targetNode ? targetNode.data() : null
 
@@ -201,7 +176,10 @@ const handleNodeTap = (node) => {
     }
   })
 
-  const references = edges.reduce(
+  const references = edges.reduce<{
+    referencedBy: ComponentReference[]
+    references: ComponentReference[]
+  }>(
     (acc, item) => {
       const { edge } = item
       if (edge.source === node.id()) {
@@ -209,7 +187,6 @@ const handleNodeTap = (node) => {
           component: edge.target,
           fileName: `${edge.target}.${edge.id.split('_')[0]}`,
         })
-        console.log('is referenced by? ', edge.source, edge.target)
       } else {
         acc.references.push({
           component: edge.source,
@@ -224,8 +201,9 @@ const handleNodeTap = (node) => {
 
   // push data to the DOM
   const nodeData = node.data()
-  console.log('nodeData ', nodeData)
   const extensions = nodeData.extensions || []
+  const apexReferences = nodeData.apexReferences || {}
+  const staticResourceReferences = nodeData.staticResourceReferences || []
 
   const componentTitleEl: HTMLHeadingElement | null =
     document.querySelector(`#component h2`)
@@ -236,7 +214,7 @@ const handleNodeTap = (node) => {
 
   const referencesEl = document.querySelector(`#component .references`)
   if (referencesEl) {
-    // reset the references
+    // reset the list
     referencesEl.innerHTML = ''
     references.references.sort((a, b) => (a.fileName < b.fileName ? -1 : 1))
 
@@ -245,8 +223,8 @@ const handleNodeTap = (node) => {
         const li = document.createElement('li')
         const button = document.createElement('button')
 
-        console.log('ref ', ref)
         button.innerText = ref.fileName
+        button.title = ref.fileName
         button.dataset.type = ref.fileName.split('.').at(-1)
         button.dataset.id = ref.component
         button.onclick = handleClickComponentTreeItem
@@ -259,7 +237,7 @@ const handleNodeTap = (node) => {
 
   const referencedByEl = document.querySelector(`#component .referenced-by`)
   if (referencedByEl) {
-    // reset the references
+    // reset the list
     referencedByEl.innerHTML = ''
     references.referencedBy.sort((a, b) => (a.fileName < b.fileName ? -1 : 1))
 
@@ -269,6 +247,7 @@ const handleNodeTap = (node) => {
         const button = document.createElement('button')
 
         button.innerText = ref.fileName
+        button.title = ref.fileName
         button.dataset.type = ref.fileName.split('.').at(-1)
         button.dataset.id = ref.component
         button.onclick = handleClickComponentTreeItem
@@ -276,6 +255,73 @@ const handleNodeTap = (node) => {
         li.appendChild(button)
         referencedByEl.appendChild(li)
       })
+    }
+  }
+
+  // Apex Method References
+  const apexReferencesTitleEl: HTMLElement | null = document.querySelector(
+    `#component #apex-references`
+  )
+  const apexReferencesUlEl: HTMLUListElement | null = document.querySelector(
+    `#component .apex-references`
+  )
+  if (apexReferencesTitleEl && apexReferencesUlEl) {
+    apexReferencesTitleEl.dataset.hasData = 'false'
+    // reset the list
+    apexReferencesUlEl.innerHTML = ''
+
+    // only render the list if the user would like to see it
+    if (showApexReference) {
+      const apexClasses = Object.keys(apexReferences)
+      apexClasses.sort((a, b) => (a < b ? -1 : 1))
+
+      if (apexClasses.length > 0) {
+        apexReferencesTitleEl.dataset.hasData = 'true'
+        apexClasses.forEach((apexClass) => {
+          const li = document.createElement('li')
+          const button = document.createElement('button')
+
+          button.innerText = `${apexClass}.cls`
+          button.title = `${apexClass}.cls`
+          button.dataset.type = 'apex'
+
+          li.appendChild(button)
+          apexReferencesUlEl.appendChild(li)
+        })
+      }
+    }
+  }
+
+  // Static Resource References
+  const staticResourceReferencesTitleEl: HTMLElement | null =
+    document.querySelector(`#component #static-resources`)
+  const staticResourceReferencesUlEl: HTMLUListElement | null =
+    document.querySelector(`#component .static-resources`)
+  if (staticResourceReferencesTitleEl && staticResourceReferencesUlEl) {
+    staticResourceReferencesTitleEl.dataset.hasData = 'false'
+    // reset the list
+    staticResourceReferencesUlEl.innerHTML = ''
+
+    // only render the list if the user would like to see it
+    if (showStaticResourceReference) {
+      if (staticResourceReferences.length > 0) {
+        staticResourceReferences.sort((a: string, b: string) =>
+          a < b ? -1 : 1
+        )
+        staticResourceReferencesTitleEl.dataset.hasData = 'true'
+
+        staticResourceReferences.forEach((staticResource: string) => {
+          const li = document.createElement('li')
+          const button = document.createElement('button')
+
+          button.innerText = staticResource
+          button.title = staticResource
+          button.dataset.type = 'staticResource'
+
+          li.appendChild(button)
+          staticResourceReferencesUlEl.appendChild(li)
+        })
+      }
     }
   }
 
@@ -312,10 +358,6 @@ cy.on('mouseout', 'node', (e) => {
   }
 })
 
-interface FuseItem {
-  id: string
-  extensions: string[]
-}
 let fuse: Fuse<FuseItem> | null = null
 const handleOpenSearchOverlay = () => {
   const settingsDialogEl: HTMLDialogElement | null =
@@ -367,7 +409,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Input listeners */
   initSearchInput()
+  initCurveTypeInput()
   initOrphanModulesToggle()
+  initApexReferencesToggle()
+  initStaticResourceReferencesToggle()
 })
 
 const initKeyboardListener = () => {
@@ -376,6 +421,8 @@ const initKeyboardListener = () => {
       if (hasActiveNode) {
         handleNodeUnTap()
       }
+    } else if (e.key === '/') {
+      handleOpenSearchOverlay()
     }
   })
 }
@@ -387,6 +434,66 @@ const initOrphanModulesToggle = () => {
     cy.nodes()
       .filter((n) => n.connectedEdges().length === 0)
       .toggleClass('orphan')
+  })
+}
+
+const updateNodeSvg = () => {
+  // force update the svg bg images
+  cy.startBatch()
+  cy.nodes().style({
+    'background-image': (node: NodeSingular) =>
+      makeComponentSvg({
+        node,
+        showApexReference,
+        showStaticResourceReference,
+      }).svg,
+  })
+  cy.endBatch()
+}
+
+const initCurveTypeInput = () => {
+  const elSelect: HTMLSelectElement | null =
+    document.querySelector(`#set-curve-type`)
+  elSelect?.addEventListener('input', (e: Event) => {
+    // batch the curve-style for edges (could be expensive on larger graphs)
+    cy.startBatch()
+    cy.edges().style({
+      'curve-style': (e.target as HTMLSelectElement).value,
+    })
+    cy.endBatch()
+  })
+}
+
+const initApexReferencesToggle = () => {
+  const el = document.querySelector(`#toggle-apex-references`)
+  el?.addEventListener('input', (e: Event) => {
+    showApexReference = !(e.target as HTMLInputElement).checked
+
+    const apexLegendEl: HTMLElement | null =
+      document.querySelector(`#key [data-apex]`)
+    if (apexLegendEl) {
+      apexLegendEl.style.display = showApexReference ? '' : 'none'
+    }
+
+    updateNodeSvg()
+  })
+}
+
+const initStaticResourceReferencesToggle = () => {
+  const el = document.querySelector(`#toggle-static-resource-references`)
+  el?.addEventListener('input', (e) => {
+    showStaticResourceReference = !(e.target as HTMLInputElement).checked
+
+    const staticResourceLegendEl: HTMLElement | null = document.querySelector(
+      `#key [data-static-resource]`
+    )
+    if (staticResourceLegendEl) {
+      staticResourceLegendEl.style.display = showStaticResourceReference
+        ? ''
+        : 'none'
+    }
+
+    updateNodeSvg()
   })
 }
 
@@ -404,8 +511,7 @@ const resetSearchOverlay = () => {
   }
 }
 
-const handleClickDialog = (e, dialog: HTMLDialogElement) => {
-  console.log('click dialog? ')
+const handleClickDialog = (e: MouseEvent, dialog: HTMLDialogElement) => {
   if (e.target === dialog) {
     dialog.close()
   }
@@ -417,20 +523,21 @@ const initSearchInput = () => {
   const elResults: HTMLUListElement | null =
     document.querySelector(`#search-results`)
 
-  elInput?.addEventListener('input', (e) => {
-    // toggle orphan node visibility
-    const results = fuse?.search(e.target.value as string)
-    console.log('search input ', e.target.value, results)
+  elInput?.addEventListener('input', (e: Event) => {
+    const target = e.target as HTMLInputElement
+
+    // search over all nodes
+    const results = fuse?.search(target.value)
 
     if (elResults) {
       // reset the results
       elResults.innerHTML = ''
 
       results?.forEach((item) => {
-        console.log('item.item ', item.item)
         const li = document.createElement('li')
         const button = document.createElement('button')
         button.innerText = item.item.id
+        button.title = item.item.id
         button.dataset.id = item.item.id
 
         const buttonSpan = document.createElement('span')

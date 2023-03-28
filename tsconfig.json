@@ -8,6 +8,7 @@
     "module": "ES2022",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "resolveJsonModule": true,
 
     "target": "es2022",
     "lib": ["es2022", "DOM"],
@@ -16,6 +17,6 @@
     "declarationDir": "dist/types"
   },
 
-  "include": ["./scripts/*.ts", "main.ts"],
+  "include": ["./scripts/*.ts", "src/main.ts"],
   "exclude": ["**/__tests__"]
 }
