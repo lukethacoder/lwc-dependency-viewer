@@ -84,6 +84,23 @@ button {
   background-color: #589059;
 }
 
+#links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+#links a {
+  color: #abb2bf;
+}
+#links a:hover {
+  color: #fff;
+}
+
 .buttons {
   position: absolute;
   right: 16px;

@@ -4,17 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>LWC Dependency Viewer | Luke Secomb</title>
-    
-    <meta
-      property="og:title"
-      content="LWC Dependency Viewer | Luke Secomb"
-    />
-    <meta
-      name="twitter:title"
-      content="LWC Dependency Viewer | Luke Secomb"
-    />
+
+    <meta property="og:title" content="LWC Dependency Viewer | Luke Secomb" />
+    <meta name="twitter:title" content="LWC Dependency Viewer | Luke Secomb" />
     <meta
       name="description"
       content="Scan your Lightning Web Components to see dependencies | LWC Search | Quickly glance to see Apex and StaticResource references"
@@ -27,7 +21,10 @@
       name="twitter:description"
       content="Scan your Lightning Web Components to see dependencies | LWC Search | Quickly glance to see Apex and StaticResource references"
     />
-    <meta property="og:url" content="http://lwc-dependency-viewer.lukesecomb.digital/" />
+    <meta
+      property="og:url"
+      content="http://lwc-dependency-viewer.lukesecomb.digital/"
+    />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -41,15 +38,21 @@
     <meta property="og:image:alt" content="Logo for LWC Dependency Viewer" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="620" />
-    <meta property="twitter:domain" content="lwc-dependency-viewer.lukesecomb.digital" />
-    <meta property="twitter:url" content="https://lwc-dependency-viewer.lukesecomb.digital" />
+    <meta
+      property="twitter:domain"
+      content="lwc-dependency-viewer.lukesecomb.digital"
+    />
+    <meta
+      property="twitter:url"
+      content="https://lwc-dependency-viewer.lukesecomb.digital"
+    />
     <meta property="twitter:widgets:new-embed-design" content="on" />
-    
+
     <!-- Analytics -->
-    <script 
+    <script
       data-goatcounter="https://lwc-dependency-viewer.goatcounter.com/count"
       src="//gc.zgo.at/count.js"
-      async 
+      async
     ></script>
     <script
       src="https://www.googletagmanager.com/gtag/js?id=G-Q9ME7RXY4J"
@@ -73,6 +76,16 @@
       <p data-apex>Apex</p>
     </div>
 
+    <div id="links">
+      <a
+        href="https://github.com/lukethacoder/lwc-dependency-viewer"
+        target="_blank"
+      >
+        Github
+      </a>
+      <a href="https://lukesecomb.digital" target="_blank">Made by luke.</a>
+    </div>
+
     <div class="buttons">
       <button id="btn-open-search">
         <span class="sr-only">Search</span>
@@ -81,24 +94,24 @@
         <span class="sr-only">Open settings</span>
       </button>
     </div>
-    
+
     <div id="component" data-is-open="false" class="sidebar">
       <div>
         <div class="component-close">
           <button class="btn-close" id="btn-component-close">
-            <span class="sr-only">
-              close component
-            </span>
+            <span class="sr-only"> close component </span>
           </button>
         </div>
         <header>
           <div class="component-title">
-            <h2 title="component name">component name component name component name component name</h2>
+            <h2 title="component name">
+              component name component name component name component name
+            </h2>
           </div>
           <span class="file-types">
-            <img class="icon-javascript" src="./public/javascript.svg"/>
-            <img class="icon-html" src="./public/html.svg"/>
-            <img class="icon-css" src="./public/css.svg"/>
+            <img class="icon-javascript" src="./public/javascript.svg" />
+            <img class="icon-html" src="./public/html.svg" />
+            <img class="icon-css" src="./public/css.svg" />
           </span>
         </header>
 
@@ -112,14 +125,14 @@
             <h3 class="ref-title" id="references">References</h3>
             <ul class="references"></ul>
           </div>
-          
+
           <div class="file-ref-type-container">
             <h3 class="ref-title" id="apex-references" data-has-data="false">
               Apex Methods
             </h3>
             <ul class="apex-references"></ul>
           </div>
-          
+
           <div class="file-ref-type-container">
             <h3 class="ref-title" id="static-resources" data-has-data="false">
               Static Resources
@@ -134,9 +147,7 @@
       <div>
         <div class="component-close">
           <button class="btn-close" id="btn-settings-close">
-            <span class="sr-only">
-              close settings
-            </span>
+            <span class="sr-only"> close settings </span>
           </button>
         </div>
 
@@ -151,7 +162,10 @@
             <label for="set-curve-type">
               <span class="label">Set Edge Curve Type</span>
               <span>
-                <p>Override the default curve style. "haystack" is more performant for larger graphs but removes arrows.</p>
+                <p>
+                  Override the default curve style. "haystack" is more
+                  performant for larger graphs but removes arrows.
+                </p>
                 <select id="set-curve-type">
                   <option value="bezier" selected>bezier</option>
                   <option value="unbundled-bezier">unbundled-bezier</option>
@@ -167,8 +181,11 @@
             <label for="toggle-orphan-modules">
               <span class="label">Hide Orphan Modules</span>
               <span>
-                <input type="checkbox" id="toggle-orphan-modules"/>
-                <p>Hides all components that are neither referenced or have any references.</p>
+                <input type="checkbox" id="toggle-orphan-modules" />
+                <p>
+                  Hides all components that are neither referenced or have any
+                  references.
+                </p>
               </span>
             </label>
           </div>
@@ -176,7 +193,7 @@
             <label for="toggle-apex-references">
               <span class="label">Hide Apex References</span>
               <span>
-                <input type="checkbox" id="toggle-apex-references"/>
+                <input type="checkbox" id="toggle-apex-references" />
                 <p>Hides indicators of Apex imports.</p>
               </span>
             </label>
@@ -185,7 +202,7 @@
             <label for="toggle-static-resource-references">
               <span class="label">Hide StaticResource References</span>
               <span>
-                <input type="checkbox" id="toggle-static-resource-references"/>
+                <input type="checkbox" id="toggle-static-resource-references" />
                 <p>Hides indicators of StaticResource imports.</p>
               </span>
             </label>
@@ -193,10 +210,10 @@
         </div>
       </div>
     </div>
-    
+
     <dialog id="search">
       <form method="dialog">
-        <input id="input-search" placeholder="Search for a component..."/>
+        <input id="input-search" placeholder="Search for a component..." />
 
         <ul id="search-results"></ul>
       </form>
