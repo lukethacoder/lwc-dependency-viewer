@@ -92,7 +92,7 @@ button {
   display: flex;
   gap: 8px;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 1em;
 }
 #links a {
   color: #abb2bf;
