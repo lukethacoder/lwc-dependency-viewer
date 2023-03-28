@@ -316,16 +316,16 @@ button {
   background-repeat: no-repeat;
 }
 #component ul li button[data-type='js']:before {
-  background-image: url('./javascript.svg') ;
+  background-image: url('/javascript.svg') ;
 }
 #component ul li button[data-type='html']:before {
-  background-image: url('./html.svg') ;
+  background-image: url('/html.svg') ;
 }
 #component ul li button[data-type='css']:before {
-  background-image: url('./css.svg') ;
+  background-image: url('/css.svg') ;
 }
 #component ul li button[data-type='apex']:before {
-  background-image: url('./salesforce.svg') ;
+  background-image: url('/salesforce.svg') ;
 }
 #component ul li button[data-type='staticResource']:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-file-zip' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='%23fff' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M6 20.735a2 2 0 0 1 -1 -1.735v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-1'%3E%3C/path%3E%3Cpath d='M11 17a2 2 0 0 1 2 2v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-2a2 2 0 0 1 2 -2z'%3E%3C/path%3E%3Cpath d='M11 5l-1 0'%3E%3C/path%3E%3Cpath d='M13 7l-1 0'%3E%3C/path%3E%3Cpath d='M11 9l-1 0'%3E%3C/path%3E%3Cpath d='M13 11l-1 0'%3E%3C/path%3E%3Cpath d='M11 13l-1 0'%3E%3C/path%3E%3Cpath d='M13 15l-1 0'%3E%3C/path%3E%3C/svg%3E");
