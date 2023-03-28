@@ -30,4 +30,4 @@ typings/
 .env.test
 
 # private test files
-test-input.json
+.*.json
