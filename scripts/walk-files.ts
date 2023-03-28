@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { FileType } from '../types'
 
 // TODO: move to config/cli options
 const FOLDER_TO_SEARCH =
@@ -15,48 +16,18 @@ interface FileMetadata {
   references?: string[]
 }
 
-interface LwcAdvancedFile {
-  name: string
-  path: string
-  references: CytoscapeEdge[]
-}
-
 interface LwcAdvanced {
   id: string
   path: string
   extensions: FileType[]
+  apexReferences?: { [key: string]: string[] }
+  staticResourceReferences?: string[]
 }
-
-type FileType = 'js' | 'html' | 'css'
 
 interface CytoscapeEdge {
   id: `${FileType}_${string}`
   source: string
   target: string
-}
-
-// Function to check if a file is a JavaScript file
-function isJavaScriptFile(file: string) {
-  return path.extname(file) === '.js'
-}
-
-// Function to check if a file is an HTML file
-function isHtmlFile(file: string) {
-  return path.extname(file) === '.html'
-}
-
-// Function to check if a file is a CSS file
-function isCssFile(file: string) {
-  return path.extname(file) === '.css'
-}
-
-// Function to check if a file imports another file
-function hasImport(content: string, target: string) {
-  const importName = `${namespace}/${target}`
-  const importRegex = new RegExp(
-    `\\bimport\\s*(?:{[^{}]*}|\\w+)\\s*from\\s*['"]${importName}['"]`
-  )
-  return importRegex.test(content)
 }
 
 const camelToSnakeCase = (str: string) =>
@@ -76,21 +47,89 @@ function removeNewlines(str: string) {
   return str.replace(/(\r\n|\n|\r)/gm, '')
 }
 
+// Function to check if a file is a JavaScript file
+function isJavaScriptFile(file: string) {
+  return path.extname(file) === '.js'
+}
+
+// Function to check if a file is an HTML file
+function isHtmlFile(file: string) {
+  return path.extname(file) === '.html'
+}
+
+// Function to check if a file is a CSS file
+function isCssFile(file: string) {
+  return path.extname(file) === '.css'
+}
+
+// Function to check if a file imports another file
+function hasJavaScriptImport(content: string, target: string) {
+  const importName = `${namespace}/${target}`
+  const importRegex = new RegExp(
+    `\\bimport\\s*(?:{[^{}]*}|\\w+)\\s*from\\s*['"]${importName}['"]`
+  )
+  return importRegex.test(content)
+}
+
 // Function to check if a CSS component references another file
 function hasCssComponent(content: string, target: string) {
   // check for CSS import
   const importRegex = new RegExp(`@import "${namespace}/${target}"`)
+  const hasImportRef = importRegex.test(content)
 
   // check for reference in CSS (styling top level of component)
   const styleReference = new RegExp(`${namespace}-${camelToSnakeCase(target)}`)
+  const haseStyleRef = styleReference.test(content)
 
-  return importRegex.test(content) || styleReference.test(content)
+  return hasImportRef || haseStyleRef
+}
+
+/**
+ * Fetch apex references for content
+ * @param content - JavaScript Content to check
+ * @returns Array of apex import strings
+ */
+function getApexImports(content: string): { [key: string]: string[] } {
+  const apexReferences: { [key: string]: string[] } = {}
+  const regex = /import\s+(?:.+?\s+from\s+)?'@salesforce\/apex\/(\w+)\.(\w+)'/g
+
+  let match
+  while ((match = regex.exec(content))) {
+    const [fullMatch, apexClass, apexMethod] = match
+    if (!apexReferences[apexClass]) {
+      apexReferences[apexClass] = []
+    }
+    apexReferences[apexClass].push(apexMethod)
+  }
+
+  return apexReferences
+}
+
+/**
+ * Fetch apex references for content
+ * @param content - JavaScript Content to check
+ * @returns Array of static resource import strings
+ */
+function getStaticResourceImports(content: string): string[] {
+  const references: string[] = []
+  const regex =
+    /import\s+(?:.+?\s+from\s+)?['"]@salesforce\/resourceUrl\/(\w+)['"]/g
+
+  let match
+  while ((match = regex.exec(content))) {
+    const [fullMatch, staticResource] = match
+    references.push(staticResource)
+  }
+
+  return references
 }
 
 const getIsFile = (fileName: string) => ({
   js: isJavaScriptFile(fileName),
   html: isHtmlFile(fileName),
   css: isCssFile(fileName),
+  apex: false,
+  staticResource: false,
 })
 
 const createEdge = (
@@ -138,6 +177,23 @@ function searchForReferences(
           .map((item) => item as FileType),
       ]
 
+      /**
+       * only js files can reference apex or static resources
+       * import apex_getUserData from '@salesforce/apex/CommunityUserController.getUserData'
+       * import images from "@salesforce/resourceUrl/communityResources";
+       */
+      if (item.content && isCurrentFile.js) {
+        const apexReferences = getApexImports(item.content)
+        if (Object.keys(apexReferences).length > 0) {
+          baseObject.apexReferences = apexReferences
+        }
+
+        const staticResourceReferences = getStaticResourceImports(item.content)
+        if (staticResourceReferences.length > 0) {
+          baseObject.staticResourceReferences = staticResourceReferences
+        }
+      }
+
       // Loop through all files in the list
       for (const file of filesConst) {
         // Skip the current file
@@ -152,7 +208,7 @@ function searchForReferences(
         if (
           isCurrentFile.js &&
           isChildFile.js &&
-          hasImport(parentFileContentRef, childComponentName)
+          hasJavaScriptImport(parentFileContentRef, childComponentName)
         ) {
           references.push(createEdge('js', childComponentName, parentComponent))
         }
@@ -171,7 +227,7 @@ function searchForReferences(
           hasCssComponent(parentFileContentRef, childComponentName)
         ) {
           references.push(
-            createEdge('html', childComponentName, parentComponent)
+            createEdge('css', childComponentName, parentComponent)
           )
         }
       }
