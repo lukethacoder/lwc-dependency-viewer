@@ -8,6 +8,16 @@ const FOLDER_TO_SEARCH =
 
 const namespace = 'c'
 
+const IGNORE_FOLDERS = [
+  '__example__',
+  '__examples__',
+  '__docs__',
+  'buildTemplates',
+  '__wdio__',
+  '__perf__',
+  '__requirements__',
+]
+
 interface FileMetadata {
   name: string
   path: string
@@ -247,15 +257,24 @@ function getAllFiles(folder: string) {
   const files: string[] = []
 
   function walkDirectory(currentPath: string) {
-    const filesInFolder = fs.readdirSync(currentPath)
+    let shouldIgnoreFolder = false
+    IGNORE_FOLDERS.forEach((ignoreFolder) => {
+      if (currentPath.includes(ignoreFolder)) {
+        shouldIgnoreFolder = true
+      }
+    })
 
-    for (const file of filesInFolder) {
-      const fullPath = path.join(currentPath, file)
+    if (shouldIgnoreFolder === false) {
+      const filesInFolder = fs.readdirSync(currentPath)
 
-      if (fs.statSync(fullPath).isDirectory()) {
-        walkDirectory(fullPath)
-      } else {
-        files.push(fullPath)
+      for (const file of filesInFolder) {
+        const fullPath = path.join(currentPath, file)
+
+        if (fs.statSync(fullPath).isDirectory()) {
+          walkDirectory(fullPath)
+        } else {
+          files.push(fullPath)
+        }
       }
     }
   }
